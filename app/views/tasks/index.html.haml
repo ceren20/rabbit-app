@@ -1,0 +1,9 @@
+/ %h1 This is the index page !
+#jobs
+	- @tasks.each do |task|
+		.job
+			%h2= link_to task.title, task
+			%p= task.company
+			
+
+
